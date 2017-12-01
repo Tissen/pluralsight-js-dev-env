@@ -1,3 +1,4 @@
+import webpack from'webpack';
 import path from 'path';
 
 export default{
@@ -5,13 +6,13 @@ export default{
   devtool: 'inline-source-map',
   noInfo: false,
   entry: [
-path.resolve(__dirname, 'src/index')
+    path.resolve(__dirname, 'src/index')
   ],
   target: 'web',
-  output:{
-  path: path.resolve(__dirname, 'src'),
-  publicPath: '/',
-  filename: 'bundle.js'
+  output: {
+    path: path.resolve(__dirname, 'src'),
+    publicPath: '/',
+    filename: 'bundle.js'
   },
 plugins: [],
 module: {
